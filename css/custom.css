@@ -9,6 +9,29 @@ html, body {
 .blue-logo {
 	background-color: #2dc7d0;
 }
+/* --- LOGO ---*/
+.logo_text {
+	font-size: 0;
+	margin: 0;
+}
+.logo_img {
+	width: 100px;
+	margin-top: 15px;
+}
+/* --- MENU --- */
+.navbar {
+	background-color: transparent;
+}
+.navbar ul a:hover {
+	background-color: transparent;
+	color: #2dc7d0;
+}
+.nav-color {
+	background-color: rgba(0, 0, 0, 0.7);
+	
+}
+/* --- FIM MENU --- */
+
 /* --- HOME --- */
 .home {
 	animation: mudarbg 20s infinite;
@@ -37,25 +60,26 @@ html, body {
 		background-image: url("/imagens/bg.jpg");
 	}
 }
-/* --- LOGO ---*/
-.logo_text {
-	font-size: 0;
-	margin: 0;
+/* --- SOBRE --- */
+.sobre {
+	background-image: url("/imagens/textura1.png");
 }
-.logo_img {
+.sobre h2 {
+	font-size: 2rem;
+	color: #212121;
+	text-transform: uppercase;
+}
+.sobre h2:after {
+	content: '';
+	display: block;
 	width: 100px;
-	margin-top: 15px;
+	border-top: 1px solid #2dc7d0;
+	margin: 15px auto;
 }
-/* --- MENU --- */
-.navbar {
-	background-color: transparent;
+.sobre p {
+	line-height: 1.8rem;
+	text-align: justify;
 }
-.navbar ul a:hover {
-	background-color: transparent;
-	color: #2dc7d0;
-}
-
-/* --- FIM MENU --- */
 /* --- CUSTOM --- */
 nav {
 	color: #fff;

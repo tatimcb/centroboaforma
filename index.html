@@ -16,15 +16,15 @@
 	<title>Centro Boa Forma - Seu espaço de saúde</title>
 </head>
 <body>
-
+	<!-- HEADER -->
 	<header>
 		<!-- MENU MOBILE -->
 		<ul class="sidenav" id="menu-mobile">
-			<li><a href="">Home</a></li>
-			<li><a href="">Sobre</a></li>
-			<li><a href="">Serviços</a></li>
-			<li><a href="">Unidades</a></li>
-			<li><a href="">Contato</a></li>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#sobre">Sobre</a></li>
+			<li><a href="#servicos">Serviços</a></li>
+			<li><a href="#unidades">Unidades</a></li>
+			<li><a href="#contato">Contato</a></li>
 		</ul>
 
 		<div class="navbar-fixed">
@@ -34,11 +34,11 @@
 					<a href="#"><img class="logo_img" src="/imagens/logo.png" alt="Logo Centro Boa Forma"></a>
 
 					<ul class="right light hide-on-med-and-down">
-						<li><a href="">Home</a></li>
-						<li><a href="">Sobre</a></li>
-						<li><a href="">Serviços</a></li>
-						<li><a href="">Unidades</a></li>
-						<li><a href="">Contato</a></li>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#servicos">Serviços</a></li>
+						<li><a href="#unidades">Unidades</a></li>
+						<li><a href="#contato">Contato</a></li>
 					</ul>
 					<a href="#" data-target="menu-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 				</div>
@@ -46,7 +46,8 @@
 		</div>
 	</header>
 
-	<section class="home bloco">
+	<!-- HOME -->
+	<section class="home bloco" id="home">
 		<div class="row container banner">
 			<div class="col s12 center">
 				<h2 class="white-text">O melhor treinamento funcional da região</h2>
@@ -57,11 +58,27 @@
 			</div>
 		</div>
 			</div>
-			
+	</section>
+	<!-- SOBRE -->
+	<section class="sobre bloco" id="sobre">
+		<div class="row container">
+			<div class="col s12">
+				<h2 class="light center">Sobre nós</h2>
+			</div>
+			<div class="col s12 l6">
+				<p clas="light">
+					A Centro Boa Forma chegou a Itabuna e região trazendo um novo conceito em prevenção, promoção e reabilitação da saúde. Localizada no centro da cidade, conta com fácil estacionamento, salas amplas e climatizadas, ambiente confortável e seguro aos seus usuários. Suas instalações foram projetadas e equipadas sob medida, dentro dos padrões de acessibilidade, para acolher principalmente pessoas com limitações funcionais. O centro dispõe de uma equipe profissional qualificada e com experiência no mercado, prezando sempre por tratamentos individualizados e baseados em evidências científicas. Localizada no centro da cidade, conta com fácil estacionamento, salas amplas e climatizadas, ambiente confortável e seguro aos seus usuários.
+				</p>
+
+			</div>
+
+		</div>
 
 	</section>
 
+	<!-- JQUERY -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- MATERIALIZE JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>      
 
 <!-- JAVASCRIPT -->
@@ -69,7 +86,15 @@
 	$(document).ready(function(){
 		//MENU MOBILE
 		$('.sidenav').sidenav();
-	})
+	});
+
+	$(window).on('scroll', function() {
+		if($(window).scrollTop() > 100){
+			$('.navbar').addClass('.nav-color');
+		} else {
+			$('.navbar').removeClass('.nav-color');
+		}
+	});
 </script>
 </body>
 </html>
