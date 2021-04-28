@@ -99,6 +99,29 @@ html, body {
 	color: #fff;
 	text-align: center;
 }
+/* --- SERVIÇOS --- */
+.servicos {
+	background-image: url("/imagens/textura2.png");
+}
+.servicos h2 {
+	font-size: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+.servicos h2:after {
+	content: '';
+	display: block;
+	width: 100px;
+	border-top: 1px solid #2dc7d0;
+	margin: 15px auto;
+}
+.servicos p {
+	color: #fff;
+	line-height: 1.8rem;
+}
+.servicos .card-content p {
+	color: #212121;
+}
 /* --- CUSTOM --- */
 nav {
 	color: #fff;
