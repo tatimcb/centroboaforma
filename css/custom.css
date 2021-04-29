@@ -122,7 +122,39 @@ html, body {
 .servicos .card-content p {
 	color: #212121;
 }
+.servicos .btn-horario {
+	padding: 20px;
+	
+}
+/* --- UNIDADES --- */
+.unidades {
+	background-image: url("/imagens/bg-unidades.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.unidades h2 {
+	font-size: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+.unidades h2:after {
+	content: '';
+	display: block;
+	width: 100px;
+	border-bottom: 1px solid #2dc7d0;
+	margin: 15px auto;
+}
+.unidades p {
+	color: #fff;
+	line-height: 1.8rem;
+}
+
+
 /* --- CUSTOM --- */
+.row {
+	margin-bottom: 0;
+}
 nav {
 	color: #fff;
 	background-color: #ee6e73;
@@ -154,6 +186,20 @@ nav i.material-icons {
 	color: #fff;
 	font-weight: 100;
 }
+.tabs {
+	background-color: #212121;
+}
+.tabs .tab a {
+	color: #fff;
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+	color: #2dc7d0;
+}
+.tabs .indicator {
+	background-color: #2dc7d0;
+}
+
+
 /* -- FIM CUSTOM -- */
 
 /* --- RESPONSIVIDADE --- */
