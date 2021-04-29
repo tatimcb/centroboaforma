@@ -149,7 +149,9 @@ html, body {
 	color: #fff;
 	line-height: 1.8rem;
 }
-
+.card-content p {
+	color: #212121;
+}
 
 /* --- CUSTOM --- */
 .row {
@@ -204,6 +206,10 @@ nav i.material-icons {
 
 /* --- RESPONSIVIDADE --- */
 @media only screen and (max-width: 480px) {
+	.card-image-horizontal {
+		display: none;
+	}
+
 
 }
 @media only screen and (min-width: 601px) {
