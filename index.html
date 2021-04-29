@@ -20,11 +20,11 @@
 	<header>
 		<!-- MENU MOBILE -->
 		<ul class="sidenav" id="menu-mobile">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#sobre">Sobre</a></li>
-			<li><a href="#servicos">Serviços</a></li>
-			<li><a href="#unidades">Unidades</a></li>
-			<li><a href="#contato">Contato</a></li>
+			<li><a class="hide-menu" href="#home">Home</a></li>
+			<li><a class="hide-menu" href="#sobre">Sobre</a></li>
+			<li><a class="hide-menu" href="#servicos">Serviços</a></li>
+			<li><a class="hide-menu" href="#unidades">Unidades</a></li>
+			<li><a class="hide-menu" href="#contato">Contato</a></li>
 		</ul>
 
 		<div class="navbar-fixed">
@@ -53,8 +53,8 @@
 				<h2 class="white-text">O melhor treinamento funcional da região</h2>
 				<p class="white-text light">Um novo conceito em prevenção, promoção e reabilitação da saúde para quem busca melhora do condicionamento e emagrecimento, além de ser divertido e desafiador. Quer experimentar?</p>
 			<div class="row">
-				<a href="#"class="btn btn-large blue-logo">Sobre nós</a>
-				<a href="#" class="btn btn-large white black-text">Contato</a>
+				<a href="#sobre"class="btn btn-large blue-logo">Sobre nós</a>
+				<a href="#contato" class="btn btn-large white black-text">Contato</a>
 			</div>
 		</div>
 			</div>
@@ -63,7 +63,7 @@
 	<section class="sobre bloco scrollspy" id="sobre">
 		<div class="row container">
 			<div class="col s12">
-				<h2 class="light center">Sobre nós</h2>
+				<h2 class="light titulo">Sobre nós</h2>
 			</div>
 			<div class="col s12 l6">
 				<p clas="light">
@@ -109,8 +109,8 @@
 	<section class="servicos bloco scrollspy" id="servicos">
 		<div class="row container">
 			<div class="col s12 center">
-				<h2 class="light">Serviços</h2>
-				<p class="light">
+				<h2 class="light titulo white-text">Serviços</h2>
+				<p class="light paragrafo white-text">
 					Suas instalações foram projetadas e equipadas sob medida, dentro dos padrões de acessibilidade, para acolher principalmente pessoas com limitações funcionais. A clínica disp[oes de uma equipe profissional qualificada e com experiência no mercado, prezaondo sempre por tratamentos individualizados e baseados em evidências científicas.
 				</p>
 			</div>
@@ -414,8 +414,8 @@
 	<section class="unidades bloco scrollSpy" id="unidades">
 		<div class="row container">
 			<div class="col s12 center">
-				<h2 class="light">Unidades</h2>
-				<p class="light">
+				<h2 class="light titulo white-text">Unidades</h2>
+				<p class="light paragrafo white-text">
 					Para oferecer serviços de acordo com a realidade e necessidade de cada região do Brasil, o centro boa forma possui unidades em quatro estados. Com atividades permanentes os espaços físicos buscam oferecer facilidade de acesso e atendimento de qualidade.
 				</p>
 			</div>
@@ -525,6 +525,17 @@
 		$(".modal").modal();
 		//TABS
 		$("ul.tabs").tabs();
+		//ESCONDER MENU AO CLICAR
+		$(".hide-menu").click(function() {
+			$(".button-collapse").sidenav("hide");
+		})
+		//AUTOPLAY CARROSSEL
+		function autoplay() {
+			$(".carousel").carousel("next");
+			setTimeout(autoplay, 4500);
+		}
+		autoplay();
+
          
 	});
 	//ADICIONANDO NAVCOLOR
