@@ -130,6 +130,34 @@ html, body {
 .card-content p {
 	color: #212121;
 }
+/* --- CONTATO --- */
+.contato {
+	background-image: url("/imagens/textura1.png");
+}
+.contato h4 {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.contato .mapa {
+	min-height: 500px;
+}
+.contato .mapa iframe {
+	width: 100%;
+	min-height: 500px;
+	border: none;
+}
+.contato .informacoes {
+	background-image: url("/imagens/textura2.png");
+	min-height: 500px;
+	padding: 30px;
+}
+
+.contato .formulario {
+	min-height: 500px;
+	padding: 30px;
+}
+
 
 /* --- CUSTOM --- */
 .row {
