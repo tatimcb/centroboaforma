@@ -108,14 +108,11 @@ html, body {
 .servicos {
 	background-image: url("/imagens/textura2.png");
 }
-
-
 .servicos .card-content p {
 	color: #212121;
 }
 .servicos .btn-horario {
-	padding: 20px;
-	
+	padding: 20px;	
 }
 /* --- UNIDADES --- */
 .unidades {
@@ -157,8 +154,24 @@ html, body {
 	min-height: 500px;
 	padding: 30px;
 }
-
-
+/* --- DEPOIMENTOS --- */
+.depoimentos .titulo::after{
+	border-color: #fff;
+}
+.depoimentos img {
+	width: 100px;
+}
+.depoimentos h4 {
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+/* --- RODAPÉ ---*/
+.rodape {
+	background-image: url("/imagens/bg-rodape.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px 0;
+}
 /* --- CUSTOM --- */
 .row {
 	margin-bottom: 0;
