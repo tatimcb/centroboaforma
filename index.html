@@ -4,6 +4,27 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="O melhor centro de saúde do Brasil">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Centro Boa forma">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="http://www.centroboaforma.com.br/">
+	<meta property="og:image" content="http://www.centroboaforma.com.br/img/centroboaforma.jpg">
+	<meta property="og:description" content="O melhor centro de saúde do Brasil">
+
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="Centro Boa forma">
+	<meta itemprop="description" content="O melhor centro de saúde do Brasil">
+	<meta itemprop="image" content="http://www.centroboaforma.com.br/img/centroboaforma.jpg">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@centroboaforma">
+	<meta name="twitter:title" content="Centro boa forma">
+	<meta name="twitter:description" content="O melhor centro de saúde do Brasil">
+	<meta name="twitter:image" content="http://www.example.com/img/centroboaforma.jpg">
+	<meta name="twitter:domain" content="http://www.centroboaforma.com.br/">
 
 	<link rel="shortcut icon" href="/imagens/fav.png">
 	<!--Google Icons-->
@@ -542,7 +563,7 @@
 							Fale Conosco
 						</h4>
 						<p class="light">Dúvidas, críticas ou sugestões? Entre em contato, seu feedback é muito importante.</p>
-						<form action="" method="POST">
+						<form action="enviar-email.php" method="POST">
 	
 							<div class="input-field">
 								<input type="text" name="name" id="name">
@@ -559,7 +580,7 @@
 								<label for="subject">Assunto</label>
 							</div>
 							<div class="input-field">
-								<textarea id="message" class="materialize-textarea"></textarea>
+								<textarea id="message" name="message" class="materialize-textarea"></textarea>
 								<label for="message">Mensagem</label>
 							</div>
 	
